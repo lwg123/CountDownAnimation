@@ -39,7 +39,6 @@
 
 // 设置倒计时页面
 - (void)setUpCountDownView {
-    if (self.countDownView) return;
     self.countDownView = [[NSBundle mainBundle] loadNibNamed:@"CountDownView" owner:nil options:nil].lastObject;
     self.countDownView.frame = self.view.bounds;
     self.countDownView.delegate = self;
